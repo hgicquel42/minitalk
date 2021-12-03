@@ -6,7 +6,7 @@
 /*   By: hgicquel <hgicquel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 13:00:59 by hgicquel          #+#    #+#             */
-/*   Updated: 2021/12/03 16:12:47 by hgicquel         ###   ########.fr       */
+/*   Updated: 2021/12/03 16:15:42 by hgicquel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ void	try_kill(int pid, int signal)
 {
 	usleep(100);
 	if (kill(pid, signal) == -1)
-		ft_putstr("ERROR 1\n");
+		return (ft_putstr("ERROR 1\n"));
 	pause();
 	if (g_signal != signal)
-		ft_putstr("ERROR 2\n");
+		return (ft_putstr("ERROR 2\n"));
 }
 
 void	send_chr(int pid, char c)

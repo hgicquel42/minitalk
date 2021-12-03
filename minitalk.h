@@ -6,7 +6,7 @@
 /*   By: hgicquel <hgicquel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 12:50:42 by hgicquel          #+#    #+#             */
-/*   Updated: 2021/12/03 15:46:18 by hgicquel         ###   ########.fr       */
+/*   Updated: 2021/12/03 16:29:49 by hgicquel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <signal.h>
 # include <unistd.h>
+# include <stdlib.h>
 
 size_t	ft_strlen(char *s);
 

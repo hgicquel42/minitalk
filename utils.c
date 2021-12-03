@@ -6,7 +6,7 @@
 /*   By: hgicquel <hgicquel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 13:14:00 by hgicquel          #+#    #+#             */
-/*   Updated: 2021/12/03 15:53:03 by hgicquel         ###   ########.fr       */
+/*   Updated: 2021/12/03 16:29:27 by hgicquel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,8 @@ void	ft_putchr(char c)
 
 void	ft_putstr(char *s)
 {
-	write(1, s, ft_strlen(s));
+	if (s)
+		write(1, s, ft_strlen(s));
 }
 
 void	ft_putui(size_t n)
