@@ -6,7 +6,7 @@
 /*   By: hgicquel <hgicquel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 12:50:50 by hgicquel          #+#    #+#             */
-/*   Updated: 2021/12/03 16:37:22 by hgicquel         ###   ########.fr       */
+/*   Updated: 2021/12/03 16:48:57 by hgicquel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,12 @@ char	*ft_stra(char *s, char c)
 	r = malloc(l + 2);
 	if (!r)
 		return (0);
-	i = -1;
-	while (s && s[++i])
+	i = 0;
+	while (s && s[i])
+	{
 		r[i] = s[i];
+		i++;
+	}
 	r[i++] = c;
 	r[i++] = 0;
 	if (s)
