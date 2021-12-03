@@ -6,7 +6,7 @@
 /*   By: hgicquel <hgicquel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 12:50:50 by hgicquel          #+#    #+#             */
-/*   Updated: 2021/12/03 16:28:48 by hgicquel         ###   ########.fr       */
+/*   Updated: 2021/12/03 16:37:22 by hgicquel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,8 @@ char	*ft_stra(char *s, char c)
 		r[i] = s[i];
 	r[i++] = c;
 	r[i++] = 0;
+	if (s)
+		free(s);
 	return (r);
 }
 
